@@ -22,30 +22,25 @@ class HomeFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         //mainView = view
-        MobileAds.initialize(activity, "ca-app-pub-3940256099942544~3347511713") // app id ca-app-pub-8162832251478705~8436758640
+        MobileAds.initialize(activity, "ca-app-pub-8162832251478705/1679778601")//"ca-app-pub-3940256099942544~3347511713") // app id ca-app-pub-8162832251478705~8436758640
 
-        mAdView = view.findViewById(R.id.adView)
+        /*mAdView = view.findViewById(R.id.adView)
         val adRequest = AdRequest.Builder().addTestDevice(AdRequest.DEVICE_ID_EMULATOR).build()
-        mAdView!!.loadAd(adRequest)
+        mAdView!!.loadAd(adRequest)*/
 
         setOnClickListeners(view)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Titulinis"
+        (activity as AppCompatActivity).supportActionBar!!.title = getString(R.string.home)
         return view
         //super.onCreateView(inflater, container, savedInstanceState);
     }
 
     private fun setOnClickListeners(view: View) {
-        val guide = view.findViewById<CardView>(R.id.cardView_guide)
-        guide.setOnClickListener { onGuideClick() }
-
-        val terms = view.findViewById<CardView>(R.id.cardView_terms)
-        terms.setOnClickListener { onTermsClick() }
-
-        val schemes = view.findViewById<CardView>(R.id.cardView_schemes)
-        schemes.setOnClickListener { onSchemesClick() }
-
-        val newest = view.findViewById<CardView>(R.id.cardView_newest)
-        newest.setOnClickListener { onNewestClick() }
+        view.findViewById<CardView>(R.id.cardView_guide).setOnClickListener { onGuideClick() }
+        view.findViewById<CardView>(R.id.cardView_terms).setOnClickListener { onTermsClick() }
+        view.findViewById<CardView>(R.id.cardView_tips).setOnClickListener { onTipsClick() }
+        view.findViewById<CardView>(R.id.cardView_schemes).setOnClickListener { onSchemesClick() }
+        view.findViewById<CardView>(R.id.cardView_settings).setOnClickListener { onSettingsClick() }
+        view.findViewById<CardView>(R.id.cardView_newest).setOnClickListener { onNewestClick() }
     }
 
     private fun onGuideClick() {
@@ -56,8 +51,16 @@ class HomeFragment : Fragment() {
         view?.findNavController()?.navigate(R.id.nav_terms, null)
     }
 
+    private fun onTipsClick() {
+        view?.findNavController()?.navigate(R.id.nav_tips, null)
+    }
+
     private fun onSchemesClick() {
         view?.findNavController()?.navigate(R.id.nav_schemes, null)
+    }
+
+    private fun onSettingsClick() {
+        view?.findNavController()?.navigate(R.id.nav_settings, null)
     }
 
     private fun onNewestClick() {

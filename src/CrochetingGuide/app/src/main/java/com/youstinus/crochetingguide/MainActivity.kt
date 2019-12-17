@@ -16,6 +16,7 @@ import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.google.android.gms.ads.MobileAds
 import com.youstinus.crochetingguide.fragments.schemes.scheme.Scheme
 import com.youstinus.crochetingguide.fragments.schemes.scheme.SchemeFragment
 import com.youstinus.crochetingguide.fragments.schemes.SchemesFragment
@@ -34,6 +35,8 @@ class MainActivity : AppCompatActivity(), /*NavigationView.OnNavigationItemSelec
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        MobileAds.initialize(this)
+
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
@@ -67,7 +70,7 @@ class MainActivity : AppCompatActivity(), /*NavigationView.OnNavigationItemSelec
         appBarConfiguration = AppBarConfiguration(
                 setOf(
                         R.id.nav_home, R.id.nav_guide, R.id.nav_terms, R.id.nav_tips, R.id.nav_schemes,
-                        R.id.nav_settings
+                        R.id.nav_settings, R.id.nav_ads
                 ), drawerLayout
         )
         setupActionBarWithNavController(navController, appBarConfiguration)

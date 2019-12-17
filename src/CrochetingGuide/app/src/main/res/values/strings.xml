@@ -45,4 +45,5 @@
     <string name="guide_text_2">Jei naudositės jau paruoštomis schemomis, tuomet reikės tik atidžiai ją sekti, tačiau jei nersite pagal savo sukurtą originalią schemą, būtinai ją užsirašykite, taip bus daug lengviau nepridaryti klaidų. [12] – laužtiniuose skliaustuose nurodytas akių ar stulpelių skaičius, kuris turi būti gaunamas nunėrus visą eilę.</string>
     <string name="guide_text_3">Susidarykite reikalingų priemonių sąrašą: siūlai (kokių spalvų ir koks kiekis bei sudėtis), kamšalas (įprastas poliesterio kamšalas, o gal vyšnių arba vynuogių kauliukai?), vąšelis (būtina parinkti tinkamo dydžio, kitaip darbo įdėsite daug, o rezultatas nedžiugins), adata, papildomos detalės (akytės, nosytė ir pan.).</string>
     <string name="guide_text_4">Eilės neriamos ratu. Eilė nėra užbaigiama sujungiant pirmą stulpelį su paskutiniu, tiesiog iškart toliau išneriamas sekančios eilės pirmas stulpelis, tokiu būdu spirale nuneriama visa detalė.</string>
+    <string name="ads">Reklamos</string>
 </resources>
