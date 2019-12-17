@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_home"
+            android:title="@string/home" />
+        <item
+            android:id="@+id/nav_guide"
+            android:icon="@drawable/ic_menu_guide"
+            android:title="@string/guide" />
+        <item
+            android:id="@+id/nav_terms"
+            android:icon="@drawable/ic_menu_terms"
+            android:title="@string/terms" />
+        <item
+            android:id="@+id/nav_tips"
+            android:icon="@drawable/ic_tip2"
+            android:title="@string/tips" />
+        <item
+            android:id="@+id/nav_schemes"
+            android:icon="@drawable/ic_menu_schemes"
+            android:title="@string/schemes" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_settings"
+            android:title="@string/settings" />
+    </group>
+
+<!--    <item android:title="Communicate">-->
+<!--        <menu>-->
+<!--            <item-->
+<!--                android:id="@+id/nav_share"-->
+<!--                android:icon="@drawable/ic_menu_share"-->
+<!--                android:title="Pasidalinti" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_send"-->
+<!--                android:icon="@drawable/ic_menu_send"-->
+<!--                android:title="Siūsti" />-->
+<!--            <item-->
+<!--                android:id="@+id/nav_exit"-->
+<!--                android:icon="@drawable/ic_menu_send"-->
+<!--                android:title="Išeiti" />-->
+<!--        </menu>-->
+<!--    </item>-->
+
+</menu>

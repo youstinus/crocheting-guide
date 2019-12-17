@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.youstinus.crochetingguide.fragments.home.HomeFragment"
+        android:label="@string/home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_guide"
+        android:name="com.youstinus.crochetingguide.fragments.guide.GuideFragment"
+        android:label="@string/guide"
+        tools:layout="@layout/fragment_guide" />
+
+    <fragment
+        android:id="@+id/nav_terms"
+        android:name="com.youstinus.crochetingguide.fragments.terms.TermsFragment"
+        android:label="@string/terms"
+        tools:layout="@layout/fragment_terms" />
+
+    <fragment
+        android:id="@+id/nav_tips"
+        android:name="com.youstinus.crochetingguide.fragments.tips.TipsFragment"
+        android:label="@string/tips"
+        tools:layout="@layout/fragment_tips" />
+
+    <fragment
+        android:id="@+id/nav_schemes"
+        android:name="com.youstinus.crochetingguide.fragments.schemes.SchemesFragment"
+        android:label="@string/schemes"
+        tools:layout="@layout/fragment_scheme_list" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.youstinus.crochetingguide.fragments.settings.SettingsFragment"
+        android:label="@string/settings"
+        tools:layout="@layout/fragment_settings" />
+
+<!--    other navs -->
+    <fragment
+        android:id="@+id/nav_scheme"
+        android:name="com.youstinus.crochetingguide.fragments.schemes.scheme.SchemeFragment"
+        android:label="@string/scheme"
+        tools:layout="@layout/fragment_scheme_item" />
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_manage"-->
+<!--        android:name="com.youstinus.ToolsFragment"-->
+<!--        android:label="@string/menu_share"-->
+<!--        tools:layout="@layout/fragment_share" />-->
+
+</navigation>

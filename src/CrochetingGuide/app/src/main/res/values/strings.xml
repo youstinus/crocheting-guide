@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">Nėrimas</string>
+    <string name="navigation_drawer_open">Atidaryti navigacijos meniu</string>
+    <string name="navigation_drawer_close">Uždaryti navigacijos meniu</string>
+    <string name="nav_header_title">Nėrimo gidas</string>
+    <string name="label_mr">MR (magic ring) – „magiškas žiedas“, nuo jo pradedame nerti detales. Dažniausiai žiede neriame 6 stulpelius be užmetimo, tačiau jų skaičius gali varijuoti priklausomai nuo schemos</string>
+    <string name="label_sc">SC (single crochet) – stulpelis be užmetimo</string>
+    <string name="label_inc">INC (increase) – du stulpeliai išneriami toje pačioje kilputėje</string>
+    <string name="label_tog">2TOG (two together) – du stulpeliai sunerti viršuje kartu</string>
+    <string name="label_hdc">HDC (half double crochet) – pusinis stulpelis</string>
+    <string name="label_dc">DC (double crochet) – stulpelis su 1 užmetimu</string>
+    <string name="label_ch">CH (chain) – pynutės kilpa</string>
+    <string name="label_slst">SLST (slip stitch) – pritrauktas stulpelis</string>
+    <string name="guide">Nuo ko pradėti?</string>
+    <string name="saved">Išsaugotos</string>
+    <string name="newest">Naujausia</string>
+    <string name="crocheting">Nėrimas</string>
+    <string name="home">Pagrindinis</string>
+    <string name="gallery">Galerija</string>
+    <string name="slideshow">Skaidrės</string>
+    <string name="tools">Įrankiai</string>
+    <string name="share">Dalintis</string>
+    <string name="send">Siųsti</string>
+    <string name="terms">Sutrumpinimai</string>
+    <string name="schemes">Schemos</string>
+    <string name="scheme">Schema</string>
+    <string name="settings">Nustatymai</string>
+    <string name="nav_header_subtitle">example@test.com</string>
+    <string name="nav_header_desc">Lengvai išmokite nerši minkštus žaislus</string>
+    <string name="download_failed">Parsisiųsti nepavyko</string>
+    <string name="keep_screen_on">Neužgesinti ekrano</string>
+    <string name="tips">Patarimai</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tips_and_tricks">Praktiniai patarimai</string>
+    <string name="tips_1">Naudokite siūlus, kuriuos galima skalbti skalbyklėje, taip žaislą sutepus bus paprasta jį išplauti.</string>
+    <string name="tips_2">Ant siūlų etiketės paprastai būna nurodytas vąšelio dydis. Neriant su per dideliu vąšeliu, nėrimas bus per laisvas, raštas bus „skylėtas“ ir matysis kamšalas. Naudojant per mažą vąšelį bus sunku užkabinti visas siūlo gijas, tad turėsite daugiau vargo, taip pat nėrinys bus kietesnis.</string>
+    <string name="tips_3">Pasižymėkite eilės pabaigą specialiais plastikiniais žymekliais, jei jų neturite, galite naudoti žiogelį ar paprasčiausiai per paskutinį eilės stulpelį perverkite kitokios spalvos nei nėrinys siūlo gabalėlį.</string>
+    <string name="guide_label_1">1. Idėja</string>
+    <string name="guide_text_1">Nuspręskite, kokį žaislą norite pagaminti. Kokio jis bus dydžio, spalvų. Kokia bus jo paskirtis? Pavyzdžiui, nertas žaislas, kurio viduje vietoje įprasto kamšalo yra vyšnių kauliukai, gali būti naudojamas kaip šildyklė ar šaldyklė.</string>
+    <string name="guide_label_2">2. Schema</string>
+    <string name="guide_label_3">3. Priemonės</string>
+    <string name="guide_label_4">4. Eilių nėrimas</string>
+    <string name="guide_text_2">Jei naudositės jau paruoštomis schemomis, tuomet reikės tik atidžiai ją sekti, tačiau jei nersite pagal savo sukurtą originalią schemą, būtinai ją užsirašykite, taip bus daug lengviau nepridaryti klaidų. [12] – laužtiniuose skliaustuose nurodytas akių ar stulpelių skaičius, kuris turi būti gaunamas nunėrus visą eilę.</string>
+    <string name="guide_text_3">Susidarykite reikalingų priemonių sąrašą: siūlai (kokių spalvų ir koks kiekis bei sudėtis), kamšalas (įprastas poliesterio kamšalas, o gal vyšnių arba vynuogių kauliukai?), vąšelis (būtina parinkti tinkamo dydžio, kitaip darbo įdėsite daug, o rezultatas nedžiugins), adata, papildomos detalės (akytės, nosytė ir pan.).</string>
+    <string name="guide_text_4">Eilės neriamos ratu. Eilė nėra užbaigiama sujungiant pirmą stulpelį su paskutiniu, tiesiog iškart toliau išneriamas sekančios eilės pirmas stulpelis, tokiu būdu spirale nuneriama visa detalė.</string>
+</resources>
