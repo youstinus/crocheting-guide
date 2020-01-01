@@ -7,7 +7,7 @@ import java.util.Objects
 
 class Scheme : Serializable {
     var title: String? = null
-    var text: String? = null
+    var description: String? = null
     var sequence: String? = null
     var images: String? = null
 
@@ -15,7 +15,7 @@ class Scheme : Serializable {
 
     constructor(title: String, text: String, sequence: String) {
         this.title = title
-        this.text = text
+        this.description = text
         this.sequence = sequence
     }
 

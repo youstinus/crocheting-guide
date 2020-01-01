@@ -1,4 +1,4 @@
-package com.youstinus.crochetingguide.utility
+package com.youstinus.crochetingguide.utilities
 
 import android.app.Activity
 import android.content.Context

@@ -9,7 +9,7 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import com.youstinus.crochetingguide.R
 import android.widget.Switch
-import com.youstinus.crochetingguide.utility.H
+import com.youstinus.crochetingguide.utilities.H
 
 
 class SettingsFragment : Fragment() {

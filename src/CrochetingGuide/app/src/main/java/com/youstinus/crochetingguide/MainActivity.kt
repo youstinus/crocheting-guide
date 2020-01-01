@@ -18,9 +18,8 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import com.google.android.gms.ads.MobileAds
 import com.youstinus.crochetingguide.fragments.schemes.scheme.Scheme
-import com.youstinus.crochetingguide.fragments.schemes.scheme.SchemeFragment
 import com.youstinus.crochetingguide.fragments.schemes.SchemesFragment
-import com.youstinus.crochetingguide.utility.H
+import com.youstinus.crochetingguide.utilities.H
 import devdeeds.com.changelanguage.LocaleHelper
 
 class MainActivity : AppCompatActivity(), /*NavigationView.OnNavigationItemSelectedListener,*/ SchemesFragment.OnListFragmentInteractionListener {

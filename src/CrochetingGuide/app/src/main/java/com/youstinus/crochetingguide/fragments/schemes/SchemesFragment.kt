@@ -2,32 +2,19 @@ package com.youstinus.crochetingguide.fragments.schemes
 
 import android.content.Context
 import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-
-import com.google.firebase.database.DataSnapshot
-import com.google.firebase.database.DatabaseError
-import com.google.firebase.database.FirebaseDatabase
-import com.google.firebase.database.ValueEventListener
-import com.youstinus.crochetingguide.fragments.schemes.scheme.MySchemeRecyclerViewAdapter
+import com.google.firebase.firestore.FirebaseFirestore
 import com.youstinus.crochetingguide.R
+import com.youstinus.crochetingguide.fragments.schemes.scheme.MySchemeRecyclerViewAdapter
 import com.youstinus.crochetingguide.fragments.schemes.scheme.Scheme
 
-
-/**
- * A fragment representing a list of Items.
- *
- *
- * Activities containing this fragment MUST implement the [OnListFragmentInteractionListener]
- * interface.
- */
 /**
  * Mandatory empty constructor for the fragment manager to instantiate the
  * fragment (e.g. upon screen orientation changes).
@@ -92,17 +79,26 @@ class SchemesFragment : Fragment() {
     }
 
     fun readSchemes(view: View) {
-        var recyclerView = view.findViewById<View>(R.id.list) as RecyclerView
+        val recyclerView = view.findViewById<View>(R.id.list) as RecyclerView
         if (mColumnCount <= 1) {
             recyclerView.layoutManager = LinearLayoutManager(context)
         } else {
             recyclerView.layoutManager = GridLayoutManager(context, mColumnCount)
         }
+        val mFireStore = FirebaseFirestore.getInstance() //var ref = FirebaseDatabase.getInstance().getReference("schemes")
 
-        var database = FirebaseDatabase.getInstance()
-        var ref = database.getReference("schemes")
+        mFireStore.collection("schemes").get().addOnSuccessListener{docs->
+            if (!docs.isEmpty) {
+                //schemes.clear();
+                val schemes = docs.toObjects(Scheme::class.java)
+                recyclerView.adapter = MySchemeRecyclerViewAdapter(schemes, mListener)
+                //dataStatus.DataIsLoaded(schemes, keys);
+            }
+        } .addOnFailureListener {
 
-        ref.addValueEventListener(object : ValueEventListener {
+        }
+
+        /*ref.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 //schemes.clear();
                 var schemes = arrayListOf<Scheme>()
@@ -119,7 +115,7 @@ class SchemesFragment : Fragment() {
             override fun onCancelled(databaseError: DatabaseError) {
 
             }
-        })
+        })*/
     }
 
     companion object {

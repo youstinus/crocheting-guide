@@ -23,18 +23,19 @@ import com.youstinus.crochetingguide.R
 
 class TermsFragment : Fragment() {
 
+    private lateinit var videoView: VideoView
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_terms, container, false) as ConstraintLayout
         //(activity as AppCompatActivity).supportActionBar!!.title = "Sutrumpinimai"
         //view.findViewById<ScrollView>(R.id.scrollView3).smoothScrollTo(0, 0)
+        videoView = view.findViewById(R.id.videoView)
         setOnClickListeners(view)
         loadVideo(view, "single_crochet.mp4")
-        view.findViewById<VideoView>(R.id.videoView).pause()
+        //view.findViewById<VideoView>(R.id.videoView).pause()
         return view
         //super.onCreateView(inflater, container, savedInstanceState);
     }
-
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
@@ -65,9 +66,9 @@ class TermsFragment : Fragment() {
         videoView.start()
     }
 
-    private fun addVideoFromPath(view: View, path: String) {
+    private fun addVideoFromPath(path: String) {
         val activity = activity
-        val videoView = view.findViewById<VideoView>(R.id.videoView)
+        //val videoView = view.findViewById<VideoView>(R.id.videoView)
 
         videoView.setVideoPath(path)
 
@@ -106,21 +107,22 @@ class TermsFragment : Fragment() {
     }
 
     fun loadVideo(view: View, name: String) {
+        videoView.pause()
+        view.findViewById<ScrollView>(R.id.scrollView3).fullScroll(ScrollView.FOCUS_UP)
         val file = fullPath(name)
         if (file.exists()) {
-            addVideoFromPath(view, file.path)
-            view.findViewById<ScrollView>(R.id.scrollView3).fullScroll(ScrollView.FOCUS_UP)
+            addVideoFromPath(file.path)
         } else {
             download(view, file)
         }
-
     }
 
     fun download(view: View, file: File) {
         val firebaseStorage = FirebaseStorage.getInstance()
+
         firebaseStorage.reference.child("videos").child("terms").child(file.name).getFile(file).addOnSuccessListener {
             // Local temp file has been created
-            addVideoFromPath(view, file.path)
+            addVideoFromPath(file.path)
             view.findViewById<ScrollView>(R.id.scrollView3).fullScroll(ScrollView.FOCUS_UP)
         }.addOnFailureListener {
             // Handle any errors

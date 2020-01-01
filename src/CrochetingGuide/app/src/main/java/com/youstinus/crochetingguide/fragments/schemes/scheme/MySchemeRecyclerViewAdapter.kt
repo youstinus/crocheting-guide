@@ -25,7 +25,7 @@ class MySchemeRecyclerViewAdapter(private val mValues: List<Scheme>, private val
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.mItem = mValues[position]
         holder.mIdView.text = mValues[position].title
-        //holder.mContentView.setText(mValues.get(position).getText());
+        //holder.mContentView.setDescription(mValues.get(position).getDescription());
 
         holder.mView.setOnClickListener {
             mListener?.onListFragmentInteraction(holder.mItem as Scheme)

@@ -36,7 +36,7 @@
 <!--                android:layout_marginTop="30dp"-->
 <!--                android:layout_marginEnd="8dp"-->
 <!--                android:gravity="center"-->
-<!--                android:text="Demo"-->
+<!--                android:description="Demo"-->
 <!--                android:textSize="24sp"-->
 <!--                app:layout_constraintEnd_toEndOf="parent"-->
 <!--                app:layout_constraintStart_toStartOf="parent"-->

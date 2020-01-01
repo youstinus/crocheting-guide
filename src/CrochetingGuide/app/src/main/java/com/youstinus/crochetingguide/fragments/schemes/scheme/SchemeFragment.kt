@@ -9,7 +9,6 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
-import androidx.core.view.marginBottom
 
 import com.bumptech.glide.Glide
 import com.google.firebase.storage.FirebaseStorage
@@ -21,8 +20,6 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.youstinus.crochetingguide.R
 import com.youstinus.crochetingguide.fragments.schemes.SchemeViewModel
-
-
 
 class SchemeFragment : Fragment() {
 
@@ -46,17 +43,17 @@ class SchemeFragment : Fragment() {
 
     private fun populateLayout() {
         val layout = mainView!!.findViewById<LinearLayout>(R.id.linear_layout1)
-        val texts = ArrayList(Arrays.asList<String>(*scheme!!.text!!.replace("\\n", "\n").split("\\{image\\}".toRegex()).dropLastWhile({ it.isEmpty() }).toTypedArray()))
+        val texts = ArrayList(Arrays.asList<String>(*scheme!!.description!!.replace("\\n", "\n").split("\\{image\\}".toRegex()).dropLastWhile({ it.isEmpty() }).toTypedArray()))
         var imagesIndex = 0
         var textsIndex = 0
 
-        for (type in scheme!!.sequence!!.split(",".toRegex()).dropLastWhile({ it.isEmpty() }).toTypedArray()) {
+        for (type in scheme!!.sequence!!.split(",".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()) {
             when (type) {
                 "0" -> {
                     val textView = TextView(activity)
                     textView.text = texts[textsIndex]
                     textView.background = resources.getDrawable(R.drawable.shape_border)
-                    var dp = Math.round(TypedValue.applyDimension(
+                    val dp = Math.round(TypedValue.applyDimension(
                             TypedValue.COMPLEX_UNIT_DIP, 8.toFloat(),resources.getDisplayMetrics()))
                     textView.setPadding(dp,dp,dp,dp)
                     textsIndex++
@@ -64,7 +61,7 @@ class SchemeFragment : Fragment() {
                 }
                 "1" -> {
                     val image = ImageView(activity)
-                    val ref = FirebaseStorage.getInstance().getReferenceFromUrl("gs://crocheting-guide.appspot.com/images/" + scheme!!.images + "/" + imagesIndex + ".jpg")
+                    val ref = FirebaseStorage.getInstance().reference.child("images").child(scheme!!.images!!).child("$imagesIndex.jpg")//getReferenceFromUrl("gs://crocheting-guide.appspot.com/images/" + scheme!!.images + "/" + imagesIndex + ".jpg")
                     downloadImages(ref, image)
                     imagesIndex++
                     layout.addView(image)
