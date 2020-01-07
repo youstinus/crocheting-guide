@@ -32,7 +32,7 @@
     <string name="tips">Patarimai</string>
 
     <!-- TODO: Remove or change this placeholder description -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_blank_fragment">Labas tuščias</string>
     <string name="tips_and_tricks">Praktiniai patarimai</string>
     <string name="tips_1">Naudokite siūlus, kuriuos galima skalbti skalbyklėje, taip žaislą sutepus bus paprasta jį išplauti.</string>
     <string name="tips_2">Ant siūlų etiketės paprastai būna nurodytas vąšelio dydis. Neriant su per dideliu vąšeliu, nėrimas bus per laisvas, raštas bus „skylėtas“ ir matysis kamšalas. Naudojant per mažą vąšelį bus sunku užkabinti visas siūlo gijas, tad turėsite daugiau vargo, taip pat nėrinys bus kietesnis.</string>
@@ -46,4 +46,19 @@
     <string name="guide_text_3">Susidarykite reikalingų priemonių sąrašą: siūlai (kokių spalvų ir koks kiekis bei sudėtis), kamšalas (įprastas poliesterio kamšalas, o gal vyšnių arba vynuogių kauliukai?), vąšelis (būtina parinkti tinkamo dydžio, kitaip darbo įdėsite daug, o rezultatas nedžiugins), adata, papildomos detalės (akytės, nosytė ir pan.).</string>
     <string name="guide_text_4">Eilės neriamos ratu. Eilė nėra užbaigiama sujungiant pirmą stulpelį su paskutiniu, tiesiog iškart toliau išneriamas sekančios eilės pirmas stulpelis, tokiu būdu spirale nuneriama visa detalė.</string>
     <string name="ads">Reklamos</string>
+    <string name="interstitial">Interstitial</string>
+    <string name="rewarded_old">Rewarded senas</string>
+    <string name="rewarded_new">Rewarded naujas</string>
+    <string name="slst_demo">SLST demo</string>
+    <string name="ch_demo">CH demo</string>
+    <string name="dc_demo">DC demo</string>
+    <string name="hdc_demo">HDC demo</string>
+    <string name="_2tog_demo">2TOG demo</string>
+    <string name="inc_demo">INC demo</string>
+    <string name="sc_demo">SC demo</string>
+    <string name="mr_demo">MR demo</string>
+    <string name="language">Kalba</string>
+    <string name="lithuanian">Lietuvių</string>
+    <string name="english">Anglų</string>
+    <string name="term">Terminas</string>
 </resources>

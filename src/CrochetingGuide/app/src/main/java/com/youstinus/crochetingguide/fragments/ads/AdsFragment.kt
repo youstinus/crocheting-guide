@@ -48,7 +48,7 @@ class AdsFragment : Fragment(), RewardedVideoAdListener {
     private lateinit var rewardedAd: RewardedAd
     lateinit var adLoader: AdLoader
     lateinit var mAdView: AdView
-var adRewardedCode: String = "ca-app-pub-3940256099942544/5224354917"
+    var adRewardedCode: String = "ca-app-pub-3940256099942544/5224354917"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -63,13 +63,10 @@ var adRewardedCode: String = "ca-app-pub-3940256099942544/5224354917"
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_ads, container, false)
 
-
-
-
         interstitialAd(view, "ca-app-pub-3940256099942544/1033173712") // my: ca-app-pub-8162832251478705/5507397185 test: "ca-app-pub-3940256099942544/1033173712"
         oldRewardedAd(view, "ca-app-pub-3940256099942544/5224354917") // my: ca-app-pub-8162832251478705/8269291890 // test: "ca-app-pub-3940256099942544/5224354917"
         newRewardedAd(view, "ca-app-pub-3940256099942544/5224354917")
-        nativeAd(view, "ca-app-pub-3940256099942544/2247696110") // my: ca-app-pub-8162832251478705/4709320830 test: "ca-app-pub-3940256099942544/2247696110"
+        //nativeAd(view, "ca-app-pub-3940256099942544/2247696110") // my: ca-app-pub-8162832251478705/4709320830 test: "ca-app-pub-3940256099942544/2247696110"
         bannerAd(view, "ca-app-pub-3940256099942544/6300978111") // my: ca-app-pub-8162832251478705/3137697797 test: "ca-app-pub-3940256099942544/6300978111"
 
         return view
@@ -78,7 +75,7 @@ var adRewardedCode: String = "ca-app-pub-3940256099942544/5224354917"
     fun bannerAd(view: View, ad:String) {
 
         val adView = AdView(activity)
-        adView.adSize = AdSize.BANNER
+        adView.adSize = AdSize.SMART_BANNER
         adView.adUnitId = ad
         mAdView = view.findViewById<AdView>(R.id.adView)
         val adRequest = AdRequest.Builder().build()

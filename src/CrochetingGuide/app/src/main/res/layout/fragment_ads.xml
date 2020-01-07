@@ -22,29 +22,27 @@
                 android:id="@+id/adView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_alignParentBottom="true"
-                android:layout_centerHorizontal="true"
                 android:layout_gravity="center"
-                app:adSize="BANNER"
-                app:adUnitId="ca-app-pub-3940256099942544/6300978111"></com.google.android.gms.ads.AdView>
-
+                app:adSize="SMART_BANNER"
+                app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+            <!--ca-app-pub-3940256099942544/6300978111  ca-app-pub-8162832251478705/3137697797-->
             <Button
                 android:id="@+id/button_interstitial"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Interstitial" />
+                android:text="@string/interstitial" />
 
             <Button
                 android:id="@+id/button_rewarded_old"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rewarded old" />
+                android:text="@string/rewarded_old" />
 
             <Button
                 android:id="@+id/button_rewarded_new"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Rewarded new" />
+                android:text="@string/rewarded_new" />
         </LinearLayout>
     </ScrollView>
 

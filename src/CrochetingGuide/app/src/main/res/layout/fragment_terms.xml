@@ -12,40 +12,42 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="right"
+            android:gravity="end"
             android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView_label_terms"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:gravity="center"
-                android:text="@string/terms"
-                android:textSize="36sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-<!--            <TextView-->
-<!--                android:id="@+id/textView17"-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_marginStart="8dp"-->
-<!--                android:layout_marginTop="30dp"-->
-<!--                android:layout_marginEnd="8dp"-->
-<!--                android:gravity="center"-->
-<!--                android:description="Demo"-->
-<!--                android:textSize="24sp"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toTopOf="parent" />-->
+            <!--            <TextView-->
+            <!--                android:id="@+id/textView17"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="8dp"-->
+            <!--                android:layout_marginTop="30dp"-->
+            <!--                android:layout_marginEnd="8dp"-->
+            <!--                android:gravity="center"-->
+            <!--                android:description="Demo"-->
+            <!--                android:textSize="24sp"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toTopOf="parent" />-->
 
             <VideoView
                 android:id="@+id/videoView"
                 android:layout_width="match_parent"
                 android:layout_height="300dp" />
+
+            <TextView
+                android:id="@+id/textView_term"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:gravity="center"
+                android:text="@string/term"
+                android:textColor="@color/colorRed"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView9"
@@ -64,12 +66,13 @@
                 android:id="@+id/button_mr"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
                 android:background="@drawable/shape_button"
-                android:onClick="onButtonClick1"
-                android:text="MR demo" />
+                android:text="@string/mr_demo" />
 
             <TextView
                 android:id="@+id/textView10"
@@ -88,12 +91,13 @@
                 android:id="@+id/button_sc"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
                 android:background="@drawable/shape_button"
-                android:onClick="onButtonClick2"
-                android:text="SC demo" />
+                android:text="@string/sc_demo" />
 
             <TextView
                 android:id="@+id/textView11"
@@ -112,12 +116,13 @@
                 android:id="@+id/button_inc"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
                 android:background="@drawable/shape_button"
-                android:onClick="onButtonClick3"
-                android:text="INC demo" />
+                android:text="@string/inc_demo" />
 
             <TextView
                 android:id="@+id/textView12"
@@ -136,12 +141,13 @@
                 android:id="@+id/button_2tog"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
                 android:background="@drawable/shape_button"
-                android:onClick="onButtonClick4"
-                android:text="2TOG demo" />
+                android:text="@string/_2tog_demo" />
 
             <TextView
                 android:id="@+id/textView13"
@@ -160,12 +166,13 @@
                 android:id="@+id/button_hdc"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
                 android:background="@drawable/shape_button"
-                android:onClick="onButtonClick5"
-                android:text="HDC demo" />
+                android:text="@string/hdc_demo" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -184,12 +191,13 @@
                 android:id="@+id/button_dc"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
                 android:background="@drawable/shape_button"
-                android:onClick="onButtonClick6"
-                android:text="DC demo" />
+                android:text="@string/dc_demo" />
 
             <TextView
                 android:id="@+id/textView15"
@@ -208,12 +216,13 @@
                 android:id="@+id/button_ch"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
                 android:background="@drawable/shape_button"
-                android:onClick="onButtonClick7"
-                android:text="CH demo" />
+                android:text="@string/ch_demo" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -232,15 +241,17 @@
                 android:id="@+id/button_slst"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
                 android:layout_marginRight="32dp"
                 android:layout_marginBottom="8dp"
                 android:background="@drawable/shape_button"
-                android:onClick="onButtonClick8"
-                android:text="SLST demo" />
+                android:text="@string/slst_demo" />
 
         </LinearLayout>
+
     </ScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

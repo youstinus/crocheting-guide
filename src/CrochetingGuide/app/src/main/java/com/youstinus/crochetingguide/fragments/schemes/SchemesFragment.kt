@@ -14,6 +14,7 @@ import com.google.firebase.firestore.FirebaseFirestore
 import com.youstinus.crochetingguide.R
 import com.youstinus.crochetingguide.fragments.schemes.scheme.MySchemeRecyclerViewAdapter
 import com.youstinus.crochetingguide.fragments.schemes.scheme.Scheme
+import com.youstinus.crochetingguide.utilities.FireFun
 
 /**
  * Mandatory empty constructor for the fragment manager to instantiate the
@@ -36,7 +37,7 @@ class SchemesFragment : Fragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_scheme_list, container, false)
-        (activity as AppCompatActivity).supportActionBar!!.title = "Schemos"
+        //(activity as AppCompatActivity).supportActionBar!!.title = "Schemos"
         // Set the adapter
         //if (view instanceof RecyclerView) {
         //val context = view.context
@@ -85,37 +86,10 @@ class SchemesFragment : Fragment() {
         } else {
             recyclerView.layoutManager = GridLayoutManager(context, mColumnCount)
         }
-        val mFireStore = FirebaseFirestore.getInstance() //var ref = FirebaseDatabase.getInstance().getReference("schemes")
 
-        mFireStore.collection("schemes").get().addOnSuccessListener{docs->
-            if (!docs.isEmpty) {
-                //schemes.clear();
-                val schemes = docs.toObjects(Scheme::class.java)
-                recyclerView.adapter = MySchemeRecyclerViewAdapter(schemes, mListener)
-                //dataStatus.DataIsLoaded(schemes, keys);
-            }
-        } .addOnFailureListener {
-
+        FireFun.loadSchemes() {schemes->
+            recyclerView.adapter = MySchemeRecyclerViewAdapter(schemes, mListener)
         }
-
-        /*ref.addValueEventListener(object : ValueEventListener {
-            override fun onDataChange(dataSnapshot: DataSnapshot) {
-                //schemes.clear();
-                var schemes = arrayListOf<Scheme>()
-                for (keyNode in dataSnapshot.children) {
-                    val scheme = keyNode.getValue<Scheme>(Scheme::class.java)!! // todo dangerous
-                    schemes.add(scheme)
-                }
-                var adapter = MySchemeRecyclerViewAdapter(schemes, mListener)
-                recyclerView.adapter = adapter
-
-                //dataStatus.DataIsLoaded(schemes, keys);
-            }
-
-            override fun onCancelled(databaseError: DatabaseError) {
-
-            }
-        })*/
     }
 
     companion object {

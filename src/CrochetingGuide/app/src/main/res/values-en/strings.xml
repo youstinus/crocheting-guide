@@ -24,4 +24,23 @@
     <string name="keep_screen_on">Keep screen on</string>
     <string name="tips">Tips</string>
     <string name="tips_and_tricks">Tips and tricks</string>
+    <string name="ads">Ads</string>
+    <string name="ch_demo">CH demo</string>
+    <string name="dc_demo">DC demo</string>
+    <string name="english">English</string>
+    <string name="guide_label_1">1. Idea</string>
+    <string name="guide_label_2">2. Scheme</string>
+    <string name="guide_label_3">3. Tools</string>
+    <string name="guide_label_4">4. Line crocheting</string>
+    <string name="hdc_demo">HDC demo</string>
+    <string name="hello_blank_fragment">Hello empty</string>
+    <string name="inc_demo">INC demo</string>
+    <string name="interstitial">Interstitial</string>
+    <string name="language">Language</string>
+    <string name="lithuanian">Lithuanian</string>
+    <string name="mr_demo">MR demo</string>
+    <string name="rewarded_new">Rewarded new</string>
+    <string name="rewarded_old">Rewarded old</string>
+    <string name="sc_demo">SC demo</string>
+    <string name="slst_demo">SLST demo</string>
 </resources>

@@ -16,4 +16,40 @@
         android:text="@string/keep_screen_on"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/language"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/switch_screen" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_language"
+        >
+
+        <RadioButton
+            android:id="@+id/radioButton_lt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lithuanian"/>
+
+        <RadioButton
+            android:id="@+id/radioButton_en"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/english" />
+    </RadioGroup>
 </androidx.constraintlayout.widget.ConstraintLayout>
