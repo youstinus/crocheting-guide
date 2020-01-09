@@ -15,6 +15,7 @@ import com.bumptech.glide.Glide
 import com.google.android.gms.ads.AdRequest
 import com.google.android.gms.ads.AdView
 import com.google.gson.Gson
+//import com.squareup.picasso.Picasso
 import com.youstinus.crochetingguide.R
 import com.youstinus.crochetingguide.fragments.schemes.SchemeViewModel
 import com.youstinus.crochetingguide.utilities.FireFun.Companion.downloadImages
@@ -58,9 +59,9 @@ class SchemeFragment : Fragment() {
         var imagesIndex = 0
         var textsIndex = 0
 
-        val dp = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4.toFloat(), resources.displayMetrics).roundToInt()
+        val dp = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8.toFloat(), resources.displayMetrics).roundToInt()
         val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
-        params.setMargins(2*dp, 2*dp, 2*dp, 2*dp)
+        params.setMargins(dp, dp, dp, dp)
 
         for (type in scheme!!.sequence.split(",".toRegex()).dropLastWhile { it.isEmpty() }.toTypedArray()) {
             when (type) {
@@ -69,7 +70,7 @@ class SchemeFragment : Fragment() {
                         val textView = TextView(activity)
                         textView.text = texts[textsIndex]
                         textView.background = resources.getDrawable(R.drawable.shape_border)
-                        textView.setPadding(2*dp, 2*dp, 2*dp, 2*dp)
+                        textView.setPadding(dp, dp, dp, dp)
                         textsIndex++
                         textView.layoutParams = params
                         layout.addView(textView)
@@ -80,10 +81,11 @@ class SchemeFragment : Fragment() {
                     downloadImages(scheme, imagesIndex) { uri ->
                         if (uri != null) {
                             Glide.with(activity!!).load(uri).into(image)
+                            //Picasso.get().load(uri).into(image)
                         }
                     }
                     imagesIndex++
-                    image.setPadding(2*dp, dp, 2*dp, dp)
+                    image.setPadding(dp, dp, dp, dp)
                     //image.layoutParams = params
                     layout.addView(image)
                 }
