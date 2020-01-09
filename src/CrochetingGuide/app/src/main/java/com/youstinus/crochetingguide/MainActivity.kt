@@ -109,7 +109,7 @@ class MainActivity : AppCompatActivity(), /*NavigationView.OnNavigationItemSelec
                 Constants.crocheting,
                 Context.MODE_PRIVATE
         )
-        return mPrefs.getString(Constants.language, "")
+        return mPrefs.getString(Constants.language, "lt") //todo was empty string here
     }
 
     private fun setLanguagePref(context: Context?, lng: String) {

@@ -28,10 +28,10 @@
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_menu_settings"
             android:title="@string/settings" />
-        <item
+        <!--<item
             android:id="@+id/nav_ads"
             android:icon="@drawable/ic_menu_ads"
-            android:title="@string/ads" />
+            android:title="@string/ads" />-->
     </group>
 
 <!--    <item android:title="Communicate">-->

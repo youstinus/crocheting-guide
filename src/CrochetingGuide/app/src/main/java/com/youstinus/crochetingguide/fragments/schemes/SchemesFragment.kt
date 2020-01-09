@@ -5,12 +5,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.firestore.FirebaseFirestore
 import com.youstinus.crochetingguide.R
 import com.youstinus.crochetingguide.fragments.schemes.scheme.MySchemeRecyclerViewAdapter
 import com.youstinus.crochetingguide.fragments.schemes.scheme.Scheme
@@ -34,14 +32,12 @@ class SchemesFragment : Fragment() {
         }
     }
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                              savedInstanceState: Bundle?): View? {
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_scheme_list, container, false)
         //(activity as AppCompatActivity).supportActionBar!!.title = "Schemos"
         // Set the adapter
         //if (view instanceof RecyclerView) {
         //val context = view.context
-
         //schemes = DummyContent.ITEMS;
         readSchemes(view)
         //recyclerView.setAdapter(new MySchemeRecyclerViewAdapter(schemes, mListener));
@@ -79,7 +75,7 @@ class SchemesFragment : Fragment() {
         fun onListFragmentInteraction(item: Scheme)
     }
 
-    fun readSchemes(view: View) {
+    private fun readSchemes(view: View) {
         val recyclerView = view.findViewById<View>(R.id.list) as RecyclerView
         if (mColumnCount <= 1) {
             recyclerView.layoutManager = LinearLayoutManager(context)

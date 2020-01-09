@@ -1,9 +1,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
 
     <ScrollView
         android:layout_width="0dp"
@@ -18,14 +16,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.google.android.gms.ads.AdView
-                android:id="@+id/adView"
+            <TextView
+                android:id="@+id/textView17"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                app:adSize="SMART_BANNER"
-                app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
-            <!--ca-app-pub-3940256099942544/6300978111  ca-app-pub-8162832251478705/3137697797-->
+                android:gravity="center"
+                android:text="Paremkite mus žiūrėdami reklamą"
+                android:textSize="18sp" />
+
             <Button
                 android:id="@+id/button_interstitial"
                 android:layout_width="match_parent"
@@ -43,6 +41,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/rewarded_new" />
+
+            <com.google.android.gms.ads.AdView
+                android:id="@+id/adView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:adSize="SMART_BANNER"
+                app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
+            <!--ca-app-pub-3940256099942544/6300978111  ca-app-pub-8162832251478705/3137697797-->
+
         </LinearLayout>
     </ScrollView>
 

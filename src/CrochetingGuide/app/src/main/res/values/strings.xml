@@ -61,4 +61,6 @@
     <string name="lithuanian">Lietuvių</string>
     <string name="english">Anglų</string>
     <string name="term">Terminas</string>
+    <string name="privacy_policy"><a href="https://sites.google.com/view/crocheting-guide-privacy/home">Privatumo politika (EN)</a></string>
+    <string name="copyright" translatable="false">© 2019-2020 youstinus\nyoustinus@pm.me</string>
 </resources>

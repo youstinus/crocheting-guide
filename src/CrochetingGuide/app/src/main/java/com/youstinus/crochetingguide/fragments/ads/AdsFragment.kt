@@ -225,38 +225,38 @@ class AdsFragment : Fragment(), RewardedVideoAdListener {
     }
 
     override fun onRewarded(reward: RewardItem) {
-        Toast.makeText(context, "onRewarded! currency: ${reward.type} amount: ${reward.amount}",
-                Toast.LENGTH_SHORT).show()
+        /*Toast.makeText(context, "onRewarded! currency: ${reward.type} amount: ${reward.amount}",
+                Toast.LENGTH_SHORT).show()*/
         // Reward the user.
     }
 
     override fun onRewardedVideoAdLeftApplication() {
-        Toast.makeText(context, "onRewardedVideoAdLeftApplication", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(context, "onRewardedVideoAdLeftApplication", Toast.LENGTH_SHORT).show()
     }
 
     override fun onRewardedVideoAdClosed() {
-        Toast.makeText(context, "onRewardedVideoAdClosed", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(context, "onRewardedVideoAdClosed", Toast.LENGTH_SHORT).show()
         loadRewardedVideoAd(adRewardedCode)
     }
 
     override fun onRewardedVideoAdFailedToLoad(errorCode: Int) {
-        Toast.makeText(context, "onRewardedVideoAdFailedToLoad", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(context, "onRewardedVideoAdFailedToLoad", Toast.LENGTH_SHORT).show()
     }
 
     override fun onRewardedVideoAdLoaded() {
-        Toast.makeText(context, "onRewardedVideoAdLoaded", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(context, "onRewardedVideoAdLoaded", Toast.LENGTH_SHORT).show()
     }
 
     override fun onRewardedVideoAdOpened() {
-        Toast.makeText(context, "onRewardedVideoAdOpened", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(context, "onRewardedVideoAdOpened", Toast.LENGTH_SHORT).show()
     }
 
     override fun onRewardedVideoStarted() {
-        Toast.makeText(context, "onRewardedVideoStarted", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(context, "onRewardedVideoStarted", Toast.LENGTH_SHORT).show()
     }
 
     override fun onRewardedVideoCompleted() {
-        Toast.makeText(context, "onRewardedVideoCompleted", Toast.LENGTH_SHORT).show()
+        //Toast.makeText(context, "onRewardedVideoCompleted", Toast.LENGTH_SHORT).show()
     }
 
     /**

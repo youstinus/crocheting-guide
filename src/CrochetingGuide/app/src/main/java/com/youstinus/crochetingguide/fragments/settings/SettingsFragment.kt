@@ -3,6 +3,7 @@ package com.youstinus.crochetingguide.fragments.settings
 import android.content.Context
 import android.content.SharedPreferences
 import android.os.Bundle
+import android.text.method.LinkMovementMethod
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -10,6 +11,7 @@ import android.view.WindowManager
 import android.widget.RadioButton
 import android.widget.RadioGroup
 import android.widget.Switch
+import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.youstinus.crochetingguide.R
@@ -29,7 +31,7 @@ class SettingsFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_settings, container, false)
         setupScreenSwitch(view)
         setupLanguageSetter(view)
-
+        setupPrivacyClick(view)
         return view
     }
 
@@ -79,6 +81,10 @@ class SettingsFragment : Fragment() {
             setLanguagePref(view, lang)
             activity?.recreate()
         }
+    }
+
+    private fun setupPrivacyClick(view: View) {
+        view.findViewById<TextView>(R.id.textView_privacy).movementMethod = LinkMovementMethod.getInstance()
     }
 
     private fun getLanguagePref(view: View): String? {

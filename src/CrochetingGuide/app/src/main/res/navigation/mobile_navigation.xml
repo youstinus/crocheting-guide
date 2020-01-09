@@ -44,7 +44,7 @@
     <fragment
         android:id="@+id/nav_ads"
         android:name="com.youstinus.crochetingguide.fragments.ads.AdsFragment"
-        android:label="@string/settings"
+        android:label="@string/ads"
         tools:layout="@layout/fragment_ads" />
 
 <!--    other navs -->

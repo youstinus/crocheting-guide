@@ -43,4 +43,7 @@
     <string name="rewarded_old">Rewarded old</string>
     <string name="sc_demo">SC demo</string>
     <string name="slst_demo">SLST demo</string>
+    <string name="_2tog_demo">2TOG demo</string>
+    <string name="term">Term</string>
+    <string name="privacy_policy"><a href="https://sites.google.com/view/crocheting-guide-privacy/home">Privacy policy</a></string>
 </resources>

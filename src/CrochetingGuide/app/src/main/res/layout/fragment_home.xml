@@ -64,7 +64,7 @@
                         android:layout_marginBottom="8dp"
                         android:gravity="center"
                         android:text="@string/guide"
-                        android:textSize="36sp"
+                        android:textSize="30sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView1"
@@ -117,7 +117,7 @@
                         android:layout_marginBottom="8dp"
                         android:gravity="center"
                         android:text="@string/terms"
-                        android:textSize="36sp"
+                        android:textSize="30sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView2"
@@ -169,7 +169,7 @@
                         android:layout_marginBottom="8dp"
                         android:gravity="center"
                         android:text="@string/tips"
-                        android:textSize="36sp"
+                        android:textSize="30sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView_tips"
@@ -222,7 +222,7 @@
                         android:layout_marginBottom="8dp"
                         android:gravity="center"
                         android:text="@string/schemes"
-                        android:textSize="36sp"
+                        android:textSize="30sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView3"
@@ -245,7 +245,8 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView_schemes">
+                app:layout_constraintTop_toBottomOf="@+id/cardView_schemes"
+                app:layout_constraintBottom_toBottomOf="parent">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -277,7 +278,7 @@
                         android:layout_marginBottom="8dp"
                         android:gravity="center"
                         android:text="@string/settings"
-                        android:textSize="36sp"
+                        android:textSize="30sp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toEndOf="@+id/imageView4"
@@ -286,7 +287,7 @@
 
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
+            <!--<androidx.cardview.widget.CardView
                 android:id="@+id/cardView_newest"
                 android:layout_width="0dp"
                 android:layout_height="64dp"
@@ -353,7 +354,7 @@
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/cardView_newest">
+                app:layout_constraintTop_toBottomOf="@+id/cardView_settings">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="match_parent"
@@ -392,7 +393,7 @@
                         app:layout_constraintTop_toTopOf="parent" />
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
-            </androidx.cardview.widget.CardView>
+            </androidx.cardview.widget.CardView>-->
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -404,7 +405,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:visibility="gone"
+        android:visibility="visible"
         app:adSize="SMART_BANNER"
         app:adUnitId="ca-app-pub-3940256099942544/6300978111"
         app:layout_constraintBottom_toBottomOf="parent"
