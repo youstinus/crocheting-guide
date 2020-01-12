@@ -85,6 +85,7 @@ class SettingsFragment : Fragment() {
 
     private fun setupPrivacyClick(view: View) {
         view.findViewById<TextView>(R.id.textView_privacy).movementMethod = LinkMovementMethod.getInstance()
+        view.findViewById<TextView>(R.id.textView_privacy_lt).movementMethod = LinkMovementMethod.getInstance()
     }
 
     private fun getLanguagePref(view: View): String? {

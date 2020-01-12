@@ -2,7 +2,7 @@
     <string name="app_name">Nėrimas</string>
     <string name="navigation_drawer_open">Atidaryti navigacijos meniu</string>
     <string name="navigation_drawer_close">Uždaryti navigacijos meniu</string>
-    <string name="nav_header_title">Nėrimo gidas</string>
+    <string name="nav_header_title">Nėrimas</string>
     <string name="label_mr">MR (magic ring) – „magiškas žiedas“, nuo jo pradedame nerti detales. Dažniausiai žiede neriame 6 stulpelius be užmetimo, tačiau jų skaičius gali varijuoti priklausomai nuo schemos</string>
     <string name="label_sc">SC (single crochet) – stulpelis be užmetimo</string>
     <string name="label_inc">INC (increase) – du stulpeliai išneriami toje pačioje kilputėje</string>
@@ -63,4 +63,5 @@
     <string name="term">Terminas</string>
     <string name="privacy_policy"><a href="https://sites.google.com/view/crocheting-guide-privacy/home">Privatumo politika (EN)</a></string>
     <string name="copyright" translatable="false">© 2019-2020 youstinus\nyoustinus@pm.me</string>
+    <string name="privacy_policy_lt" translatable="false"><a href="https://sites.google.com/view/nerimas-privatumo-politika/home">Privatumo politika (LT)</a></string>
 </resources>

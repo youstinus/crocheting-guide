@@ -56,6 +56,20 @@
     </RadioGroup>
 
     <TextView
+        android:id="@+id/textView_privacy_lt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:clickable="true"
+        android:text="@string/privacy_policy_lt"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView_privacy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:focusable="true" />
+
+    <TextView
         android:id="@+id/textView_privacy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

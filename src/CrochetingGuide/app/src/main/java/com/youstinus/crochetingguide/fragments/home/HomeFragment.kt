@@ -13,13 +13,10 @@ import com.youstinus.crochetingguide.R
 
 class HomeFragment : Fragment() {
 
-    //var mainView: View
-    private var mAdView: AdView? = null
-
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        setupAd(view)
+        //setupAd(view)
 
         setOnClickListeners(view)
         //(activity as AppCompatActivity).supportActionBar!!.title = getString(R.string.home)
@@ -27,11 +24,11 @@ class HomeFragment : Fragment() {
         //super.onCreateView(inflater, container, savedInstanceState);
     }
 
-    private fun setupAd(view: View) {
+    /*private fun setupAd(view: View) {
         val adView = view.findViewById<AdView>(R.id.adView)
         val adRequest = AdRequest.Builder().build()
         adView.loadAd(adRequest)
-    }
+    }*/
 
     private fun setOnClickListeners(view: View) {
         view.findViewById<CardView>(R.id.cardView_guide).setOnClickListener { onGuideClick() }
