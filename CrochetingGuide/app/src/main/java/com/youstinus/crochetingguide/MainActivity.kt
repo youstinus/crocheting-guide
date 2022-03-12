@@ -38,7 +38,7 @@ class MainActivity : AppCompatActivity(), /*NavigationView.OnNavigationItemSelec
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        MobileAds.initialize(this, "ca-app-pub-8162832251478705~8436758640");
+        //MobileAds.initialize(this, "ca-app-pub-8162832251478705~8436758640")
 
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
@@ -107,7 +107,7 @@ class MainActivity : AppCompatActivity(), /*NavigationView.OnNavigationItemSelec
         }
         val mPrefs: SharedPreferences = context.getSharedPreferences(
                 Constants.crocheting,
-                Context.MODE_PRIVATE
+                MODE_PRIVATE
         )
         return mPrefs.getString(Constants.language, "lt") //todo was empty string here
     }
@@ -118,7 +118,7 @@ class MainActivity : AppCompatActivity(), /*NavigationView.OnNavigationItemSelec
         }
         val mPrefs: SharedPreferences = context.getSharedPreferences(
                 Constants.crocheting,
-                Context.MODE_PRIVATE
+                MODE_PRIVATE
         )
         val prefsEditor = mPrefs.edit()
         prefsEditor.putString(Constants.language, lng)
