@@ -115,7 +115,7 @@ class TermsFragment : Fragment() {
     }
 
     private fun fullPath(fileName: String): File {
-        return File(activity!!.filesDir.absolutePath + "/" + fileName)
+        return File(requireActivity().filesDir.absolutePath + "/" + fileName)
     }
 
     private fun t(message: String) {
@@ -136,7 +136,7 @@ class TermsFragment : Fragment() {
     }
 
     private fun fileExists(name: String): Boolean {
-        val filePath = activity!!.filesDir.absolutePath + "/" + name
+        val filePath = requireActivity().filesDir.absolutePath + "/" + name
         val file = File(filePath)
         return file.exists()
     }

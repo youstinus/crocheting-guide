@@ -140,7 +140,7 @@ class SchemeFragment : Fragment() {
         when {
             myExternalFile.exists() -> {
                 //Picasso.get().load(myExternalFile).into(imageView)
-                Glide.with(activity!!).load(myExternalFile).into(image)
+                Glide.with(requireActivity()).load(myExternalFile).into(image)
 
                 //imageView.visibility = View.VISIBLE
 
@@ -167,7 +167,7 @@ class SchemeFragment : Fragment() {
 
                 storage.getFile(myExternalFile).addOnSuccessListener {
                     if (activity != null && myExternalFile != null && image != null) {
-                        Glide.with(activity!!).load(myExternalFile).into(image)
+                        Glide.with(requireActivity()).load(myExternalFile).into(image)
                     }
                     // Local temp file has been created
                     //Timber.d("File saved")
@@ -180,7 +180,7 @@ class SchemeFragment : Fragment() {
             else -> {
                 FirebaseStorage.getInstance().reference.child("images").child(scheme.images).child(name).getFile(myExternalFile).addOnSuccessListener {
                     if (activity != null && myExternalFile != null && image != null) {
-                        Glide.with(activity!!).load(myExternalFile).into(image)
+                        Glide.with(requireActivity()).load(myExternalFile).into(image)
                     }
                 }.addOnFailureListener {
                 }
