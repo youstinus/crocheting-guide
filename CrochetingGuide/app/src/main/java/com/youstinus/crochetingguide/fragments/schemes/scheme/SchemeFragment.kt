@@ -12,15 +12,12 @@ import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProviders
 import com.bumptech.glide.Glide
-import com.google.android.gms.ads.AdRequest
-import com.google.android.gms.ads.AdView
 import com.google.firebase.storage.FirebaseStorage
 import com.google.gson.Gson
 import com.youstinus.crochetingguide.R
 import com.youstinus.crochetingguide.fragments.schemes.SchemeViewModel
 import com.youstinus.crochetingguide.utilities.Constants
-import com.youstinus.crochetingguide.utilities.FireFun.Companion.downloadImages
-import devdeeds.com.changelanguage.LocaleHelper
+import com.youstinus.crochetingguide.utilities.LocaleHelper
 import java.io.File
 import java.util.*
 import kotlin.math.roundToInt

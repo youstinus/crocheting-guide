@@ -23,7 +23,7 @@ import com.youstinus.crochetingguide.fragments.schemes.scheme.Scheme
 import com.youstinus.crochetingguide.fragments.schemes.SchemesFragment
 import com.youstinus.crochetingguide.utilities.Constants
 import com.youstinus.crochetingguide.utilities.H
-import devdeeds.com.changelanguage.LocaleHelper
+import com.youstinus.crochetingguide.utilities.LocaleHelper
 
 class MainActivity : AppCompatActivity(), /*NavigationView.OnNavigationItemSelectedListener,*/ SchemesFragment.OnListFragmentInteractionListener {
 

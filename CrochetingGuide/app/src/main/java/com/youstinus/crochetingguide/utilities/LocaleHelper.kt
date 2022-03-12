@@ -1,4 +1,4 @@
-package devdeeds.com.changelanguage
+package com.youstinus.crochetingguide.utilities
 
 import android.annotation.TargetApi
 import android.content.Context
